@@ -4854,7 +4854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581e3489c2214af4d86dbcef5afe6a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 900
+  speed: 800
   hingeJoint2DLeft: {fileID: 5401756275234025745}
   hingeJoint2DRight: {fileID: 5401756273972469558}
 --- !u!1 &5401756275234025744
