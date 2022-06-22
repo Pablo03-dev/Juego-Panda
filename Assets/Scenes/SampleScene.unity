@@ -4377,10 +4377,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: dumplingball
       objectReference: {fileID: 0}
+    - target: {fileID: 7650440059126916395, guid: dfa6192c8e172374e8a56f56103273e7, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2f6470e5c8a6c0d4b95829876abf1a49, type: 2}
     - target: {fileID: 7650440059126916396, guid: dfa6192c8e172374e8a56f56103273e7, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 2d08867d8bc7586468e08e3cbbb525ef, type: 2}
+      objectReference: {fileID: 6200000, guid: 2f6470e5c8a6c0d4b95829876abf1a49, type: 2}
     - target: {fileID: 7650440059126916396, guid: dfa6192c8e172374e8a56f56103273e7, type: 3}
       propertyPath: m_GravityScale
       value: 3
