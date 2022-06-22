@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 8849623}
   - component: {fileID: 8849625}
   - component: {fileID: 8849626}
+  - component: {fileID: 8849628}
+  - component: {fileID: 8849627}
   m_Layer: 0
   m_Name: Right bar
   m_TagString: Untagged
@@ -290,6 +292,51 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!233 &8849627
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849621}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 3.278438, y: -3.2001479}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
+--- !u!50 &8849628
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849621}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &20607672
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +589,7 @@ GameObject:
   - component: {fileID: 175576116}
   m_Layer: 0
   m_Name: reja superior
-  m_TagString: Untagged
+  m_TagString: Muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -626,6 +673,8 @@ GameObject:
   - component: {fileID: 201367825}
   - component: {fileID: 201367823}
   - component: {fileID: 201367827}
+  - component: {fileID: 201367829}
+  - component: {fileID: 201367828}
   m_Layer: 0
   m_Name: Left bar
   m_TagString: Untagged
@@ -780,6 +829,51 @@ PolygonCollider2D:
       - {x: 2.19, y: -0.7}
       - {x: 2.34, y: -0.65999997}
       - {x: 2.4099998, y: -0.61}
+--- !u!233 &201367828
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201367822}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -3.221562, y: -3.210148}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 0
+  m_AngleLimits:
+    m_LowerAngle: 0
+    m_UpperAngle: 359
+--- !u!50 &201367829
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201367822}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &288707262
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +887,7 @@ GameObject:
   - component: {fileID: 288707264}
   m_Layer: 0
   m_Name: Borde derec
-  m_TagString: Untagged
+  m_TagString: Muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2816,7 +2910,7 @@ GameObject:
   - component: {fileID: 1137200532}
   m_Layer: 0
   m_Name: Borde izqui
-  m_TagString: Untagged
+  m_TagString: Muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2924,6 +3018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1164574581}
   - component: {fileID: 1164574582}
+  - component: {fileID: 1164574583}
   m_Layer: 0
   m_Name: FlipperController
   m_TagString: Untagged
@@ -2960,6 +3055,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftaflipperAnimator: {fileID: 201367823}
   RightflipperAnimator: {fileID: 8849626}
+--- !u!114 &1164574583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164574580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581e3489c2214af4d86dbcef5afe6a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  hingeJoint2DLeft: {fileID: 201367828}
+  hingeJoint2DRight: {fileID: 8849627}
 --- !u!1 &1260940743
 GameObject:
   m_ObjectHideFlags: 0
