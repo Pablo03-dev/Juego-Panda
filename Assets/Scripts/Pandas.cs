@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pandas : MonoBehaviour
 {
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,11 @@ public class Pandas : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void Mover()
+    {
+        transform.Translate(transform.up * speed * Time.deltaTime, Space.World);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
