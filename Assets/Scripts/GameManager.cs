@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Slider barrahp;
     private int score;
     public Text scoreText;
+    public Transform posReseteo;
+    public Rigidbody2D rb;
 
     //public float timer = 10;
     //private bool juegoPausado = false;
@@ -61,6 +63,12 @@ public class GameManager : MonoBehaviour
         score += puntajesumaar;
         //Audiomanager.PlaySound("Coin");
         UpdatedScore();
+    }
+
+    public void ResetearPosicion(Transform _transform)
+    {
+        _transform.position = posReseteo.position;
+        rb.velocity = Vector2.zero;
     }
 
     //private void Update()

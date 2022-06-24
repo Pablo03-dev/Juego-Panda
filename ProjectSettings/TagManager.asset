@@ -7,6 +7,7 @@ TagManager:
   - Bola
   - Panda
   - Muro
+  - Piso final
   layers:
   - Default
   - TransparentFX

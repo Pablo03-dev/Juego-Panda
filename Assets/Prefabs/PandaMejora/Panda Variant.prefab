@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 900339355544175698, guid: fdcee483f946ae44db9739320e372afd, type: 3}
       propertyPath: m_Name
-      value: Panda
+      value: Panda Variant
       objectReference: {fileID: 0}
     - target: {fileID: 900339355544175698, guid: fdcee483f946ae44db9739320e372afd, type: 3}
       propertyPath: m_IsActive
@@ -201,3 +201,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdcee483f946ae44db9739320e372afd, type: 3}
+--- !u!95 &801165292749578958 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 900339355544175699, guid: fdcee483f946ae44db9739320e372afd, type: 3}
+  m_PrefabInstance: {fileID: 531682356897392285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &801165292749578959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 900339355544175698, guid: fdcee483f946ae44db9739320e372afd, type: 3}
+  m_PrefabInstance: {fileID: 531682356897392285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5932523880168753269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801165292749578959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8d4ffe8e99e784998717c18b632ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anima: {fileID: 801165292749578958}
