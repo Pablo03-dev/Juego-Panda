@@ -10,6 +10,9 @@ public class TiradorScript : MonoBehaviour
     public float maxPower = 100f;
     public Slider powerSlider;
 
+    public Rigidbody2D myrb;
+    public float fuerza;
+
     List<Rigidbody2D> ballList;
     bool ballReady;
     // Start is called before the first frame update
@@ -73,5 +76,10 @@ public class TiradorScript : MonoBehaviour
             ballList.Remove(collision.gameObject.GetComponent<Rigidbody2D>());
             power = 0f;
         }
+    }
+
+    public void LanzarPelota()
+    {
+        myrb.AddForce(Vector2.up * fuerza, ForceMode2D.Impulse);
     }
 }
