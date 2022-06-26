@@ -26,7 +26,7 @@ public class GameoverScreen : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("Base juego");
+        SceneManager.LoadScene("SampleScene");
         Time.timeScale = 1f;
         JuegoPausado = false;
     }
