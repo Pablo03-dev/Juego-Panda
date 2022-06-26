@@ -20,24 +20,24 @@ public class Pinball : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKeyDown(KeyCode.A))
         {
             jointMotorLeft.motorSpeed = -speed;
             hingeJoint2DLeft.motor = jointMotorLeft;
         }
-        if(Input.GetKeyUp(KeyCode.LeftArrow))
+        if(Input.GetKeyUp(KeyCode.A))
         {
             jointMotorLeft.motorSpeed = speed;
             hingeJoint2DLeft.motor = jointMotorLeft;
         }
 
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             jointMotorRight.motorSpeed = speed;
             hingeJoint2DRight.motor = jointMotorRight;
         }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.D))
         {
             jointMotorRight.motorSpeed = -speed;
             hingeJoint2DRight.motor = jointMotorRight;
