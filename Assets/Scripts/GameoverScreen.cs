@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameoverScreen : MonoBehaviour
 {
-    public Text pointsText;
+    public TMP_Text pointsText;
     private bool JuegoPausado = false;
 
     public void Setup(int score)
