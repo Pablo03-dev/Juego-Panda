@@ -8,6 +8,7 @@ TagManager:
   - Panda
   - Muro
   - Piso final
+  - Obstaculos
   layers:
   - Default
   - TransparentFX
