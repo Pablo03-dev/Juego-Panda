@@ -6684,6 +6684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radio: 1.11
   fuerzaExplosion: 2800
+  efectoExplosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
 --- !u!50 &1967236945
 Rigidbody2D:
   serializedVersion: 4

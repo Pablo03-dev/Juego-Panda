@@ -6,6 +6,7 @@ public class Bomba : MonoBehaviour
 {
     [SerializeField] private float radio;
     [SerializeField] private float fuerzaExplosion;
+    [SerializeField] private GameObject efectoExplosion;
 
     private void Update()
     {
@@ -17,6 +18,10 @@ public class Bomba : MonoBehaviour
 
     public void Explosion()
     {
+        Instantiate(efectoExplosion, transform.position, Quaternion.identity);
+
+        //CinemachineMoivimientoCamara.Instance.MoverCamara(10, 10, 1);
+
         Collider2D[] objetos = Physics2D.OverlapCircleAll(transform.position, radio);
 
         foreach (Collider2D colisionador in objetos)
@@ -31,7 +36,7 @@ public class Bomba : MonoBehaviour
             }
         }
 
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmos()
