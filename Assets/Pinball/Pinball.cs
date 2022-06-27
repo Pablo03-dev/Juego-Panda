@@ -29,6 +29,8 @@ public class Pinball : MonoBehaviour
         {
             jointMotorLeft.motorSpeed = speed;
             hingeJoint2DLeft.motor = jointMotorLeft;
+
+            Audiomanager.PlaySound("Flippers");
         }
 
 
@@ -41,6 +43,7 @@ public class Pinball : MonoBehaviour
         {
             jointMotorRight.motorSpeed = -speed;
             hingeJoint2DRight.motor = jointMotorRight;
+            Audiomanager.PlaySound("Flippers");
         }
     }
 }

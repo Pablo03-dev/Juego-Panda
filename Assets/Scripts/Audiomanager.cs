@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Audiomanager : MonoBehaviour
 {
-    public static AudioClip FireSound;
-    public static AudioClip enemyDeathSound;
-    public static AudioClip coinInsertSound;
-    public static AudioClip powerupSound;
+    public static AudioClip FlippersSound;
+    public static AudioClip PartidaSound;
+    public static AudioClip ImpactObstacSound;
+    public static AudioClip HuidaSound;
     public static AudioClip impactSound;
     public static AudioClip healSound;
 
@@ -15,10 +15,10 @@ public class Audiomanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FireSound = Resources.Load<AudioClip>("fire");
-        enemyDeathSound = Resources.Load<AudioClip>("enemyDeath");
-        coinInsertSound = Resources.Load<AudioClip>("Coinintro");
-        powerupSound = Resources.Load<AudioClip>("Power up");
+        FlippersSound = Resources.Load<AudioClip>("Flippers");
+        PartidaSound = Resources.Load<AudioClip>("BolaInicia");
+        ImpactObstacSound = Resources.Load<AudioClip>("ImpacObstac");
+        HuidaSound = Resources.Load<AudioClip>("HuidaPanda");
         impactSound = Resources.Load<AudioClip>("impacto");
         healSound = Resources.Load<AudioClip>("Powerup 2");
 
@@ -35,19 +35,19 @@ public class Audiomanager : MonoBehaviour
     {
         switch (clip)
         {
-            case "fire": audioScr.PlayOneShot(FireSound);
+            case "Flippers": audioScr.PlayOneShot(FlippersSound);
                 break;
 
-            case "enemyDeath":
-                audioScr.PlayOneShot(enemyDeathSound);
+            case "BolaInicia":
+                audioScr.PlayOneShot(PartidaSound);
                 break;
 
-            case "Coinintro":
-                audioScr.PlayOneShot(coinInsertSound);
+            case "ImpacObstac":
+                audioScr.PlayOneShot(ImpactObstacSound);
                 break;
 
-            case "Power up":
-                audioScr.PlayOneShot(powerupSound);
+            case "HuidaPanda":
+                audioScr.PlayOneShot(HuidaSound);
                 break;
 
             case "impacto":

@@ -20,6 +20,7 @@ public class ModifyHpZone : MonoBehaviour
         if (collision.CompareTag("Panda"))
         {
             GameManager.manager.QuitarVidas();
+            Audiomanager.PlaySound("HuidaPanda");
             //CameraShake.instance.StartShake(0.1f, 0.1f);
             //Destroy();
         }

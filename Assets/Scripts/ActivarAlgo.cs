@@ -20,6 +20,7 @@ public class ActivarAlgo : MonoBehaviour
         if (collision.gameObject.CompareTag("Bola"))
         {
             Presionado?.Invoke();
+            Audiomanager.PlaySound("BolaInicia");
         }
     }
 }

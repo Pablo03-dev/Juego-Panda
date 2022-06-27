@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7650440059126916396}
   - component: {fileID: 7650440059126916395}
   - component: {fileID: 7478519330974368864}
+  - component: {fileID: 6613621716618175407}
   m_Layer: 0
   m_Name: dumplingball
   m_TagString: Bola
@@ -139,3 +140,15 @@ MonoBehaviour:
   onEnter: []
   onStay: []
   onExit: []
+--- !u!114 &6613621716618175407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7650440059126916394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe348bf633f75449b9f2ace75017408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
