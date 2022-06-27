@@ -13,6 +13,7 @@ public class Bomba : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             Explosion();
+            Audiomanager.PlaySound("Explosion");
         }
     }
 

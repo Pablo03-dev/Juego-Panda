@@ -8,8 +8,9 @@ public class Audiomanager : MonoBehaviour
     public static AudioClip PartidaSound;
     public static AudioClip ImpactObstacSound;
     public static AudioClip HuidaSound;
-    public static AudioClip impactSound;
-    public static AudioClip healSound;
+    public static AudioClip ExplosionSound;
+    public static AudioClip MuroSound;
+    public static AudioClip PandaSound;
 
     static AudioSource audioScr;
     // Start is called before the first frame update
@@ -17,10 +18,11 @@ public class Audiomanager : MonoBehaviour
     {
         FlippersSound = Resources.Load<AudioClip>("Flippers");
         PartidaSound = Resources.Load<AudioClip>("BolaInicia");
-        ImpactObstacSound = Resources.Load<AudioClip>("ImpacObstac");
+        ImpactObstacSound = Resources.Load<AudioClip>("ImpactoObsta");
         HuidaSound = Resources.Load<AudioClip>("HuidaPanda");
-        impactSound = Resources.Load<AudioClip>("impacto");
-        healSound = Resources.Load<AudioClip>("Powerup 2");
+        ExplosionSound = Resources.Load<AudioClip>("Explosion");
+        MuroSound = Resources.Load<AudioClip>("ImpacMuro");
+        PandaSound = Resources.Load<AudioClip>("Panda");
 
         audioScr = GetComponent<AudioSource>();
     }
@@ -42,7 +44,7 @@ public class Audiomanager : MonoBehaviour
                 audioScr.PlayOneShot(PartidaSound);
                 break;
 
-            case "ImpacObstac":
+            case "ImpactoObsta":
                 audioScr.PlayOneShot(ImpactObstacSound);
                 break;
 
@@ -50,12 +52,16 @@ public class Audiomanager : MonoBehaviour
                 audioScr.PlayOneShot(HuidaSound);
                 break;
 
-            case "impacto":
-                audioScr.PlayOneShot(impactSound);
+            case "Explosion":
+                audioScr.PlayOneShot(ExplosionSound);
                 break;
 
-            case "Powerup 2":
-                audioScr.PlayOneShot(healSound);
+            case "ImpacMuro":
+                audioScr.PlayOneShot(MuroSound);
+                break;
+
+            case "Panda":
+                audioScr.PlayOneShot(PandaSound);
                 break;
         }
     }

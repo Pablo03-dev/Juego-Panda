@@ -27,6 +27,7 @@ public class Pandas : MonoBehaviour
         if (collision.CompareTag("Bola"))
         {
             GameManager.manager.AddScore(10);
+            Audiomanager.PlaySound("Panda");
             Destroy(gameObject);
         }
     }
