@@ -20,7 +20,7 @@ public class ModifyHpZone : MonoBehaviour
         if (collision.CompareTag("Panda"))
         {
             GameManager.manager.QuitarVidas();
-            CameraShake.instance.StartShake(0.2f, 0.1f);
+            //CameraShake.instance.StartShake(0.1f, 0.1f);
             //Destroy();
         }
     }
