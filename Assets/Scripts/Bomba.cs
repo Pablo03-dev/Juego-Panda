@@ -20,7 +20,7 @@ public class Bomba : MonoBehaviour
     {
         Instantiate(efectoExplosion, transform.position, Quaternion.identity);
 
-        //CinemachineMoivimientoCamara.Instance.MoverCamara(10, 10, 1);
+        CinemachineMovimientoCamara.Instance.MoverCamara(3, 3, 0.3f);
 
         Collider2D[] objetos = Physics2D.OverlapCircleAll(transform.position, radio);
 
