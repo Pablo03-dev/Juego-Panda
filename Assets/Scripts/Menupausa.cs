@@ -38,7 +38,7 @@ public class Menupausa : MonoBehaviour
     {
         juegoPausado = false;
         Time.timeScale = 1f;
-       
+        Audiomanager.PlaySound("Botones");
         menuPausa.SetActive(false);
     }
 
@@ -46,11 +46,13 @@ public class Menupausa : MonoBehaviour
     {
         juegoPausado = false;
         Time.timeScale = 1f;
+        Audiomanager.PlaySound("Botones");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Cerrar()
     {
+        Audiomanager.PlaySound("Botones");
         Application.Quit();
     }
 
