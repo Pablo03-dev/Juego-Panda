@@ -60,6 +60,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6817736877447072603}
     m_Modifications:
+    - target: {fileID: 801165292749578953, guid: c6fab9faf7c56da46b400a91fffdf7cf, type: 3}
+      propertyPath: efectoExplosion
+      value: 
+      objectReference: {fileID: 1632940424546296822, guid: 1a75d84e836ba2f40a1c6a61243fdbb7, type: 3}
     - target: {fileID: 801165292749578954, guid: c6fab9faf7c56da46b400a91fffdf7cf, type: 3}
       propertyPath: m_RootOrder
       value: 0

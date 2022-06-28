@@ -12,26 +12,38 @@ public class AnimRecorridos : MonoBehaviour
         if(random == 0)
         {
             anima.Play("Recorrido1");
-            Audiomanager.PlaySound("PandaPasto");
+            Audiomanager.PlaySound("Panda_pasto");
+
         }
 
         if (random == 1)
         {
             anima.Play("Recorrido2");
-            Audiomanager.PlaySound("PandaPasto");
+            Audiomanager.PlaySound("Panda_pasto");
         }
 
         if (random == 2)
         {
             anima.Play("Recorrido3");
-            Audiomanager.PlaySound("PandaPasto");
+            Audiomanager.PlaySound("Panda_pasto");
         }
 
         if (random == 3)
         {
             anima.Play("Recorrido4");
-            Audiomanager.PlaySound("PandaPasto");
+            Audiomanager.PlaySound("Panda_pasto");
         }
 
+
     }
+
+    //void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Bola"))
+    //    {
+    //        //Instantiate(efectoExplosion, transform.position, Quaternion.identity);
+
+    //        Destroy(gameObject);
+    //    }
+    //}
 }

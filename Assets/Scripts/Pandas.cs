@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pandas : MonoBehaviour
 {
     public float speed;
+    [SerializeField] private GameObject efectoExplosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class Pandas : MonoBehaviour
     {
         if (collision.CompareTag("Bola"))
         {
+            Instantiate(efectoExplosion, transform.position, Quaternion.identity);
             GameManager.manager.AddScore(10);
             Audiomanager.PlaySound("Panda");
             Destroy(gameObject);

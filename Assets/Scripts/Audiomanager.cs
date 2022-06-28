@@ -26,7 +26,7 @@ public class Audiomanager : MonoBehaviour
         MuroSound = Resources.Load<AudioClip>("ImpacMuro");
         PandaSound = Resources.Load<AudioClip>("Panda");
         BotonesSound = Resources.Load<AudioClip>("Botones");
-        PandaCorreSound = Resources.Load<AudioClip>("PandaPasto");
+        PandaCorreSound = Resources.Load<AudioClip>("Panda_pasto");
 
         audioScr = GetComponent<AudioSource>();
     }
@@ -72,7 +72,7 @@ public class Audiomanager : MonoBehaviour
                 audioScr.PlayOneShot(BotonesSound);
                 break;
 
-            case "PandaPasto":
+            case "Panda_pasto":
                 audioScr.PlayOneShot(PandaCorreSound);
                 break;
         }
