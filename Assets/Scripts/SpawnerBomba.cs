@@ -21,7 +21,7 @@ public class SpawnerBomba : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= timeToSpawn && aux == null)
         {
-            aux = Instantiate(objeto);
+            aux = Instantiate(objeto, transform.position, Quaternion.identity);
             timer = 0f;
 
         }
