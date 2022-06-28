@@ -9,6 +9,7 @@ TagManager:
   - Muro
   - Piso final
   - Obstaculos
+  - BolaTwo
   layers:
   - Default
   - TransparentFX
