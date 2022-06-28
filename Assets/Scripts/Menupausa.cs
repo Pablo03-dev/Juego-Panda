@@ -52,8 +52,9 @@ public class Menupausa : MonoBehaviour
 
     public void Cerrar()
     {
-        Audiomanager.PlaySound("Botones");
+        //Audiomanager.PlaySound("Botones");
         Application.Quit();
+        Debug.Log("Sali");
     }
 
 
