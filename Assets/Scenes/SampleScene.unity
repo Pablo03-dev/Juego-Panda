@@ -4641,7 +4641,7 @@ GameObject:
   - component: {fileID: 1095323040}
   m_Layer: 0
   m_Name: borde apoyo_0 (1)
-  m_TagString: Muro
+  m_TagString: Barreras
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7327,7 +7327,7 @@ GameObject:
   - component: {fileID: 1992209574}
   m_Layer: 0
   m_Name: borde apoyo_0
-  m_TagString: Muro
+  m_TagString: Barreras
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

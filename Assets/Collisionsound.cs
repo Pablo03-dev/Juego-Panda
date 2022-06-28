@@ -29,12 +29,14 @@ public class Collisionsound : MonoBehaviour
         if (collision.gameObject.tag == "Obstaculos")
         {
             GameManager.manager.AddScore(5);
+            CinemachineMovimientoCamara.Instance.MoverCamara(2, 2, 0.2f);
             Audiomanager.PlaySound("ImpactoObsta");
         }
 
         if (collision.gameObject.tag == "Muro")
         {
             //GameManager.manager.AddScore(5);
+            CinemachineMovimientoCamara.Instance.MoverCamara(1, 1, 0.1f);
             Audiomanager.PlaySound("ImpacMuro");
         }
     }
