@@ -13,6 +13,7 @@ public class Audiomanager : MonoBehaviour
     public static AudioClip PandaSound;
     public static AudioClip BotonesSound;
     public static AudioClip PandaCorreSound;
+    public static AudioClip PowerupSound;
 
     static AudioSource audioScr;
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class Audiomanager : MonoBehaviour
         PandaSound = Resources.Load<AudioClip>("Panda");
         BotonesSound = Resources.Load<AudioClip>("Botones");
         PandaCorreSound = Resources.Load<AudioClip>("Panda_pasto");
+        PowerupSound = Resources.Load<AudioClip>("ImpacObstac");
 
         audioScr = GetComponent<AudioSource>();
     }
@@ -74,6 +76,10 @@ public class Audiomanager : MonoBehaviour
 
             case "Panda_pasto":
                 audioScr.PlayOneShot(PandaCorreSound);
+                break;
+
+            case "ImpacObstac":
+                audioScr.PlayOneShot(PowerupSound);
                 break;
         }
     }

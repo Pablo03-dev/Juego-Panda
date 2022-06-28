@@ -25,7 +25,7 @@ public class Powerup : MonoBehaviour
         {
             Instantiate(powerup, transform.position, Quaternion.identity);
             //GameManager.manager.AddScore(10);
-            //Audiomanager.PlaySound("Panda");
+            Audiomanager.PlaySound("ImpacObstac");
             Destroy(gameObject);
         }
     }
