@@ -33,4 +33,5 @@ public class Pandas : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
