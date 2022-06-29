@@ -32,6 +32,13 @@ public class Pandas : MonoBehaviour
             Audiomanager.PlaySound("Panda");
             Destroy(gameObject);
         }
+        if (collision.CompareTag("BolaTwo"))
+        {
+            Instantiate(efectoExplosion, transform.position, Quaternion.identity);
+            GameManager.manager.AddScore(13);
+            Audiomanager.PlaySound("Panda");
+            Destroy(gameObject);
+        }
     }
 
 }
